@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+    --color-dark-green: #063C2D;
+    --color-deep-green: #022A20;
+    --color-primary-green: #159447;
+    --color-bright-green: #36C978;
+    --color-light-green: #DDF5E7;
+    --color-cream: #F5F7F0;
+    --color-solar-yellow: #DDF45A;
+    --color-dark-text: #10231D;
+    --color-muted-text: #66756F;
+
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+
+
+
+
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark-text);
+    background: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Hide scrollbar while preserving scroll */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark-text);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-solar-yellow);
+    border-radius: 9999px;
+}
+
+/* Smooth transitions */
+a,
+button {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+div,section,article,header,footer,nav,main {
+    display: flex;
+}

@@ -1,0 +1,385 @@
+header {
+    z-index: 99999;
+    position: fixed;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+header.active {
+    background: var(--color-dark-green);
+
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 14px 0;
+    color: var(--color-light-green);
+}
+
+.navigation {
+    gap: 20px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation ul li {
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navigation ul a {
+    padding: 0 5px 3px 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 9999px;
+    background: var(--color-solar-yellow);
+    color: var(--color-dark-green);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.navbar-cta {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    background-image:
+        linear-gradient(135deg,
+            rgba(2, 42, 32, 0.88) 0%,
+            rgba(6, 60, 45, 0.7) 60%,
+            rgba(2, 42, 32, 0.5) 100%),
+        url("https://images.unsplash.com/photo-1785562008875-3fb3f2819b78?w=1600&h=900&fit=crop&auto=format");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    margin-bottom: 40px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.badge {
+    background: rgba(221, 244, 90, 0.15);
+    color: #DDF45A;
+    border: 1px solid var(--color-solar-yellow);
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 9999px;
+    font-size: 16px;
+}
+
+.main-content h1 {
+    color: white;
+    font-size: 80px;
+    /* color: var(--color-light-green); */
+}
+
+.main-content p {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--color-light-green);
+    max-width: 600px;
+}
+
+
+.stats {
+    padding: 70px 0;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color-dark-green);
+}
+
+.stat-box {
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.stat-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-card i {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 38px;
+}
+
+.stat-card h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color-solar-yellow);
+}
+
+.stat-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-light-green);
+}
+
+
+.section {
+    padding: 70px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.card-section {
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 70%;
+}
+
+.card-section>h1{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-dark-text);
+    width: 50%;
+}
+
+.card-section>p{
+    width: 50%;
+    text-align: center;
+    color: var(--color-muted-text);
+}
+
+.explore-cards {
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.explore-card {
+    cursor: pointer;
+    transition: 0.2s all ease;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.explore-card:hover{
+    transform: translateY(-3px);
+}
+.card-img {
+    transition: 0.2s all ease-in-out;
+    background-image: url("https://images.unsplash.com/photo-1785562008875-3fb3f2819b78?w=600&h=400&fit=crop&auto=format");
+    height: 250px;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.card-img:hover {
+    background-size: 102%;
+}
+
+.card-content{
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    justify-content: left;
+}
+.card-content p {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+.tag{
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    color: var(--color-primary-green);
+    font-weight: 600;
+}
+.card-content h4{
+    color: var(--color-dark-text);
+    font-size: 22px;
+}
+.card-content a{
+color: var(--color-primary-green);
+font-weight: 600;
+}
+.card-content a i{
+    margin-left: 5px;
+}
+
+
+
+.why-section {
+    position: relative;
+    background: #064536;
+    color: white;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* TOP CURVE */
+.why-section::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -5%;
+    width: 110%;
+    height: 120px;
+    background: #f5f7f0;
+    border-radius: 0 0 50% 50%;
+}
+
+/* BOTTOM CURVE */
+.why-section::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: -5%;
+    width: 110%;
+    height: 120px;
+    background: #f5f7f0;
+    border-radius: 50% 50% 0 0;
+}
+
+.why-container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1250px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.why-content {
+    max-width: 600px;
+}
+
+.why-content h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.why-content p {
+    color: #b8d8cd;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.benefit span {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(190, 240, 100, 0.3);
+}
+
+.benefit strong {
+    font-size: 15px;
+}
+
+/* EARTH CIRCLE */
+
+.earth {
+    width: 380px;
+    height: 380px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            #39c979,
+            #14744f);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+.earth span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .why-section {
+        padding: 100px 25px;
+    }
+
+    .why-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-content h2 {
+        font-size: 36px;
+    }
+
+    .benefit {
+        text-align: left;
+    }
+
+    .earth {
+        width: 280px;
+        height: 280px;
+        font-size: 55px;
+    }
+}
