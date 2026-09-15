@@ -10,6 +10,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/variable.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"
+        integrity="sha512-8LENNbXmzI/Gbj+OwXmqR6V4QaUAw0/porPzy1+dQoJqC0JPHedWoe0DDOTL2uHA5XXJyIsPtiMHH86pVlay6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
 </head>
 <header class="">
 
@@ -30,6 +35,7 @@
 </header>
 
 <body>
+    <div class="backtotop" id="backtotop"><i class="fa-solid fa-angles-up"></i></div>
     <div class="main">
         <div class="main-content">
             <div class="badge">Sustainable Energy</div>
@@ -44,22 +50,38 @@
         <div class="stat-box">
             <div class="stat-card">
                 <i class="fa-solid fa-earth-americas"></i>
-                <h2>3.2M+</h2>
+                <h2>
+                    <div data-target="3.2" class="live-counter"></div>
+                    <span>M+</span>
+                
+                </h2>
                 <p>Tons of CO2 Reduced</p>
             </div>
             <div class="stat-card">
                 <i class="fa-regular fa-house"></i>
-                <h2>3.2M+</h2>
+                <h2>
+                    <div data-target="1.8" class="live-counter"></div>
+                    <span>M+</span>
+                
+                </h2>
                 <p>Tons of CO2 Reduced</p>
             </div>
             <div class="stat-card">
                 <i class="fa-solid fa-tree"></i>
-                <h2>3.2M+</h2>
+                 <h2>
+                    <div data-target="5.4" class="live-counter"></div>
+                    <span>M+</span>
+                
+                </h2>
                 <p>Tons of CO2 Reduced</p>
             </div>
             <div class="stat-card">
                 <i class="fa-solid fa-calendar-days"></i>
-                <h2>3.2M+</h2>
+                <h2>
+                    <div data-target="12" class="live-counter"></div>
+                    <span>+</span>
+                
+                </h2>
                 <p>Tons of CO2 Reduced</p>
             </div>
         </div>
@@ -68,12 +90,13 @@
 
     <div class="section">
         <div class="card-section">
-            <h1>Explore Sustainable Energy</h1>
-            <p>Discover how solar, wind and green living can create a cleaner, healthier and more sustainable planet for
+            <h1 class="section-heading">Explore Sustainable Energy</h1>
+            <p class="section-sub">Discover how solar, wind and green living can create a cleaner, healthier and more
+                sustainable planet for
                 future generations.</p>
             <div class="explore-cards">
                 <div class="explore-card">
-                    <div class="card-img"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1785562008875-3fb3f2819b78?w=600&h=400&fit=crop&auto=format);" class="card-img"></div>
                     <div class="card-content">
                         <p class="tag">SOLAR ENERGY</p>
                         <h4>Clean Power from the Sun</h4>
@@ -83,7 +106,7 @@
                     </div>
                 </div>
                 <div class="explore-card">
-                    <div class="card-img"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1679580447808-b5b6911aacea?w=600&h=400&fit=crop&auto=format);" class="card-img"></div>
                     <div class="card-content">
                         <p class="tag">SOLAR ENERGY</p>
                         <h4>Clean Power from the Sun</h4>
@@ -93,7 +116,7 @@
                     </div>
                 </div>
                 <div class="explore-card">
-                    <div class="card-img"></div>
+                    <div style="background-image: url(https://images.unsplash.com/photo-1533038023143-de7a62a9d779?w=600&h=400&fit=crop&auto=format);" class="card-img"></div>
                     <div class="card-content">
                         <p class="tag">SOLAR ENERGY</p>
                         <h4>Clean Power from the Sun</h4>
@@ -122,35 +145,83 @@
                 <div class="benefits">
                     <div class="benefit">
                         <span>🌱</span>
-                        <strong>Reduces carbon footprint</strong>
+                        Reduces carbon footprint
                     </div>
 
                     <div class="benefit">
                         <span>🌊</span>
-                        <strong>Preserves natural resources</strong>
+                        Preserves natural resources
                     </div>
 
                     <div class="benefit">
                         <span>🌿</span>
-                        <strong>Creates a cleaner and healthier environment</strong>
+                        Creates a cleaner and healthier environment
                     </div>
 
                     <div class="benefit">
                         <span>🌱</span>
-                        <strong>Builds a sustainable future for generations</strong>
+                        Builds a sustainable future for generations
                     </div>
                 </div>
             </div>
 
             <div class="earth">
-                🌍
-                <span>Our Shared Home</span>
+                <img src="assets/earth.gif" alt="">
+                <!-- <span>Our Shared Home</span> -->
             </div>
 
         </div>
     </section>
+
+
+    <div class="section">
+        <div class="switch-container">
+            <h1 class="section-heading">Ready to Make the Switch?</h1>
+            <p class="section-sub">Join over 1.8 million homes already powered by clean, renewable energy. The future is
+                green — start today.</p>
+            <div class="btn-box">
+                <a href="" class="btn btn-dark">Explore Solar<i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="" class="btn btn-light">Explore Wind<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="secion">
+        <div class="footer_section">
+            <div class="footer_logo_section">
+                <a class="footer_logo" href="index.html">GreenGrid</a>
+                <p>Powering a cleaner future through solar, wind, and sustainable living. Join millions making the
+                    switch to renewable energy.</p>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-behance"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer_navigation">
+                <h2 class="footer_heading">PAGES</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Solar Energy</a></li>
+                    <li><a href="">Wind Power</a></li>
+                    <li><a href="">Green Lifestyle</a></li>
+                </ul>
+            </div>
+            <div class="footer_contact">
+                <h2 class="footer_heading">CONTACT</h2>
+                <a href="">mayank131029@gmail.com</a>
+                <a href="">+91 87081 89664</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@2026 GreenGrid. All right reserved.</p>
+            <p>Made by Mayank</p>
+        </div>
+    </footer>
 </body>
-<footer></footer>
+
 <script src="script.js"></script>
+
 
 </html>
