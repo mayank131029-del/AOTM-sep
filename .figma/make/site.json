@@ -1,0 +1,10 @@
+{
+  "description": "Generates tailored designs and prototypes based on user inputs to streamline creative workflows and enhance project visualization.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
